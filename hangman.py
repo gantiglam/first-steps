@@ -55,9 +55,10 @@ def game(glossary):
     y_or_no = input()
     while y_or_no in {'Y', 'y', 'yes', 'Yes'}:
         game(glossary)
-        y_or_no = input()
-
-
+    else:
+        exit()
+        
+        
 def draw_gallows(n, gallows):  # drawing of gallows
     if n == 1:
         for i in range(5, 7):
